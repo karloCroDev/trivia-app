@@ -1,0 +1,13 @@
+$primary: #45474b;
+$secondary: #495e57;
+$yellow: #f4ce14;
+$white: #f5f7f8;
+$border-radius-big: 20px;
+$border-radius-small: 8px;
+
+@mixin font-fam($weight) {
+  font-family: "Caveat", sans-serif, cursive;
+  font-optical-sizing: auto;
+  font-weight: $weight !important; //Need to override standrd google font
+  font-style: normal;
+}

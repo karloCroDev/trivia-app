@@ -1,0 +1,50 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+.navbar {
+  width: 100%;
+  height: 120px;
+
+  position: fixed;
+  padding: 0px 50px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    all: unset;
+  }
+  h1 {
+    font-size: 70px;
+    @include font-fam(800);
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    .heart {
+      fill: $yellow;
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .navbar {
+    width: 500px;
+    overflow-x: hidden;
+    padding: 0 20px;
+    h1 {
+      font-size: 40px;
+    }
+    ul {
+      gap: 10px;
+      .heart {
+        font-size: 20px;
+      }
+    }
+  }
+}
