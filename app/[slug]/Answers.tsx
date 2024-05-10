@@ -5,11 +5,11 @@ import style from "../styles/main.module.scss";
 import toast from "react-hot-toast";
 
 const Answers = ({ data }: { data: {} | any }) => {
-  const { score, setScore, life, setLife } = UseCntx();
+  const { score, setScore, life, setLife, clicked, setClicked } = UseCntx();
 
   const correct: string = data[score].correct_answer;
   const answArr: string[] = [...data[score].incorrect_answers, correct].sort();
-  const [clicked, setClicked] = useState<boolean>(false);
+
   const [clickedIndx, setClickedIndx] = useState<number>(0);
   const chekcer = (itm: string, i: number) => {
     if (clicked) {

@@ -16,11 +16,14 @@ type DefineValues = {
   data: [];
   trigger: boolean;
   setTrigger: React.Dispatch<React.SetStateAction<boolean>>;
+  clicked: boolean;
+  setClicked: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const Cntx = createContext<DefineValues | null>(null);
 
 const FirebaseC = ({ children }: { children: React.ReactNode }) => {
+  const [clicked, setClicked] = useState<boolean>(false);
   const [name, setName] = useState<string>("");
   const [score, setScore] = useState<number>(0);
   const [life, setLife] = useState<number>(3);
@@ -59,6 +62,8 @@ const FirebaseC = ({ children }: { children: React.ReactNode }) => {
           data,
           trigger,
           setTrigger,
+          clicked,
+          setClicked,
         }}
       >
         {children}

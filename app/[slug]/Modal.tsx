@@ -20,6 +20,7 @@ const Modal = ({ text, confetti }: Props) => {
     setScore,
     setName,
     setTrigger,
+    setClicked,
   } = UseCntx();
 
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -31,6 +32,32 @@ const Modal = ({ text, confetti }: Props) => {
     setLife(3);
     setScore(0);
     setTrigger(!trigger);
+    setClicked(false);
+    dialogRef.current?.close();
+  };
+
+  const restart = () => {
+    //Could have use removal with param to speciwy weather to restart or not, but I think since this is small app and component that this looks nicer
+    // Alternative would be
+
+    // const removeModal = async (restart:boolean) => {
+    // if(!restart){
+    //   if (name && score > 0) {
+    //     await createPlayer();
+    //   }
+    //   setName("");
+    //
+    //}
+    //   setLife(3);
+    //   setScore(0);
+    //   setTrigger(!trigger);
+    //   setClicked(false);
+    //   dialogRef.current?.close();
+    // };
+
+    setLife(3);
+    setScore(0);
+    setClicked(false);
     dialogRef.current?.close();
   };
   useEffect(() => {
@@ -53,7 +80,7 @@ const Modal = ({ text, confetti }: Props) => {
           {/* Need to use this because I set display to be flex so modal won't close by it's default behavior */}
           <h2>{text}</h2>
           <div>
-            <button onClick={() => window.location.reload()}>Play again</button>
+            <button onClick={restart}>Play again</button>
             <Link href={"/"}>
               <button className={style.lastBtn} onClick={removeModal}>
                 Main menu

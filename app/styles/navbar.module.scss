@@ -34,14 +34,16 @@
 
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .navbar {
-    width: 500px;
-    overflow-x: hidden;
+    width: 100%;
+
     padding: 0 20px;
+
     h1 {
       font-size: 40px;
     }
     ul {
       gap: 10px;
+
       .heart {
         font-size: 20px;
       }
