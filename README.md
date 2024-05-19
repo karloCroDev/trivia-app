@@ -31,6 +31,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Clone the app:
+```
+git clone "https://github.com/karloCroDev/trivia-app.git"
+```
 First, run the development server:
 
 ```bash
@@ -43,7 +47,7 @@ pnpm dev
 bun dev
 ```
 
-Also dom't forget to install all dependencies
+Also don't forget to install all dependencies
 ```
 npm install
 #or
