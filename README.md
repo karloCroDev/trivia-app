@@ -24,7 +24,6 @@ Also this app is mobile responsive, so you can use it freely on any device (see 
 
 **Getting started**
  - I hosted the app using vercel, so feel free to check it out  👉[Kvizardio](https://trivia-app-seven-ruby.vercel.app/)
-pp).
 
 Clone the app:
 ```
