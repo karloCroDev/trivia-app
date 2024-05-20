@@ -24,12 +24,7 @@ Also this app is mobile responsive, so you can use it freely on any device (see 
 
 **Getting started**
  - I hosted the app using vercel, so feel free to check it out  👉[Kvizardio](https://trivia-app-seven-ruby.vercel.app/)
- - 
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+pp).
 
 Clone the app:
 ```
@@ -50,7 +45,7 @@ bun dev
 Also don't forget to install all dependencies
 ```
 npm install
-#or
+# or
 npm i 
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
