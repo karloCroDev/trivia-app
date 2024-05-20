@@ -49,5 +49,7 @@ npm i
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
+ **Contact**
+-   If you have any issues, make sure to contact me
+-   Gmail: karlo.webdev@gmail.com
 
